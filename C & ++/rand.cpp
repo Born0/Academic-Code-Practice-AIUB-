@@ -1,0 +1,14 @@
+
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+main()
+{
+  int x;
+  int i;
+  for(i=0;i<10;i++)
+  {
+    x=rand()%11;
+    cout<<x<<endl;
+  }
+}

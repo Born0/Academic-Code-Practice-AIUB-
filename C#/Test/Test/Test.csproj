@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6766A8C5-71E5-41A3-B83B-AEE63D9146C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VisualReactiveWinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0ee513efc52b401d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Visual.Reactive.WinForms.1.0.0\lib\VisualReactiveWinForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\User Information.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\User Information.Designer.cs">
+      <DependentUpon>User Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor\Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor\Doctor.Designer.cs">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Page.Designer.cs">
+      <DependentUpon>Login Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stuff\Stuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stuff\Stuff.Designer.cs">
+      <DependentUpon>Stuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User Controls\Patient Info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Patient Info.Designer.cs">
+      <DependentUpon>Patient Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Patient Registration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Patient Registration.Designer.cs">
+      <DependentUpon>Patient Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\CheckOut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Room Info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Room Info.Designer.cs">
+      <DependentUpon>Room Info.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\User Information.resx">
+      <DependentUpon>User Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor\Doctor.resx">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Page.resx">
+      <DependentUpon>Login Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stuff\Stuff.resx">
+      <DependentUpon>Stuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Patient Info.resx">
+      <DependentUpon>Patient Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Patient Registration.resx">
+      <DependentUpon>Patient Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Room Info.resx">
+      <DependentUpon>Room Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\icons8_enter_2_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\icons8_expand_arrow_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\icons8_expand_arrow_26px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\icons8_key_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\icons8_minimize_window_26px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\icons8_shutdown_26px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\icons8_shutdown_26px_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\icons8_user_male_60px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

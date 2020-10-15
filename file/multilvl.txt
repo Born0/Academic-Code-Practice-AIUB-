@@ -1,0 +1,22 @@
+class Add: public Rectangle
+{
+protected:
+  int number;
+public:
+  Add(int x)
+  {
+    number=x;
+  }
+  void valueAdded()
+  {
+    int value=volume+number;
+    cout<<"Value:"<<value<<endl;
+  }
+
+};
+
+
+
+Add a1;
+  a1=Add(10);
+  a1.valueAdded();

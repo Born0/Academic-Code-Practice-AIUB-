@@ -1,0 +1,40 @@
+J. Whistle's New Car
+time limit per test15.0 s
+memory limit per test512 MB
+inputcar.in
+outputstandard output
+Whistle has bought a new car, which has an infinite fuel tank capacity.
+
+He discovered an irregular country since it has n cities and there are exactly n - 1 roads between them, of course, all cities are connected. He is so much clever, he realized that the country is like a rooted tree of n nodes and node 1 is the root. Each city i has only one filling station by which he can fill his car's fuel tank in no more than Xi liter. Whistle liked the country very much, and he wants to know what the most attractive city in the country is. The attractiveness of the city i is defined by how much it’s reachable from other cities, in other words the attractiveness of city is the number of cities j that satisfies these condition:
+
+City j is in the subtree of city i (except for city i itself).
+Whistle will start at city j and will only fill his car’s fuel tank with Xj liters and never fill it again until he reach city i.
+Whistle should be able to reach city i with non-negative fuel.
+He knows the length of every road and that 1 Km will take exactly 1 liter on any road.
+
+As you know, Whistle is very clever, but he is not that good at programming, so he asked you to help him. He wants to know the attractiveness of each city, so that he can decide which city to live in.
+
+Input
+The first line of input contains one integer T, the number of test cases.
+
+The next line contains one integer (1 ≤ n ≤ 500, 000), The number of cities in the country.
+
+The next line contains n integers (1 ≤ Xi ≤ 1, 000, 000, 000).
+
+Each one of the next n - 1 line contains three integers A, B, C (1 ≤ A, B ≤ n and 1 ≤ C ≤ 1, 000, 000, 000), that means there is a road between city A and city B of length C.
+
+Output
+For each test case, output a line containing n integers, the attractiveness of each city.
+
+Example
+inputCopy
+1
+4
+5 10 5 10
+1 2 100
+2 3 5
+3 4 5
+outputCopy
+0 2 1 0
+Note
+Large I/O files. Please consider using fast input/output methods.

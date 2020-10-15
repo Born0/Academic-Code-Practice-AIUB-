@@ -1,0 +1,10 @@
+F:\class\github\C#\Inheritance\Inheritance\bin\Debug\Inheritance.exe.config
+F:\class\github\C#\Inheritance\Inheritance\bin\Debug\Inheritance.exe
+F:\class\github\C#\Inheritance\Inheritance\bin\Debug\Inheritance.pdb
+F:\class\github\C#\Inheritance\Inheritance\bin\Debug\Library1.dll
+F:\class\github\C#\Inheritance\Inheritance\bin\Debug\Library1.pdb
+F:\class\github\C#\Inheritance\Inheritance\obj\Debug\Inheritance.csprojAssemblyReference.cache
+F:\class\github\C#\Inheritance\Inheritance\obj\Debug\Inheritance.csproj.CoreCompileInputs.cache
+F:\class\github\C#\Inheritance\Inheritance\obj\Debug\Inheritance.csproj.CopyComplete
+F:\class\github\C#\Inheritance\Inheritance\obj\Debug\Inheritance.exe
+F:\class\github\C#\Inheritance\Inheritance\obj\Debug\Inheritance.pdb

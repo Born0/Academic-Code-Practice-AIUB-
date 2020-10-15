@@ -1,0 +1,62 @@
+#include<iostream>
+
+using namespace std;
+class Box
+{
+protected:
+  int height;
+  int width;
+public:
+  Box()
+  {
+    cout<<"default Box"<<endl;
+  }
+  Box(int h,int w)
+  {
+      cout<<"Pera Box"<<endl;
+    height=h;
+    width=w;
+    cout<<"height:"<<h<<"    width:"<<width<<endl;
+  }
+  void input(int ht,int wd)
+  {
+    Box(ht,wd);
+  }
+  void output()
+  {
+    cout<<"height:"<<height<<"    width:"<<width<<endl;
+  }
+};
+
+
+class Rectangle:public Box
+{
+  int breadth;
+public:
+  Rectangle()
+  {
+    cout<<"default Rectangle"<<endl;
+  }
+  Rectangle(int b):Box(2,3)
+  {
+    cout<<"Pera Rectangle"<<endl;
+    breadth=b;
+    cout<<"breadth:"<<breadth<<endl;
+  }
+  void area()
+  {
+    int area=breadth*height*width;
+    cout<<"area:"<<area<<endl;
+    cout<<"breadth:"<<breadth<<endl;
+  }
+};
+
+main()
+{
+  Box k1;
+  int h,w,b;
+  //k1.input(2,3);
+  Rectangle r1;
+  r1=Rectangle(4);
+  r1.area();
+}

@@ -1,0 +1,19 @@
+Advantages of a circular linked list :
+
+Some problems are circular and a circular data structure would be more natural when used to represent it
+
+The entire list can be traversed starting from any node (traverse means visit every node just once)
+
+fewer special cases when coding(all nodes have a node before and after it)
+
+It is concerned with the accessibility of a node.
+
+In Circular list every node is accessible from given node.
+
+From this given node all nodes can be reached by many changing through the list.
+
+It concerns the deletion operation. In singly linked list to delete desired node, it is necessary to give the address of first node of the list.
+
+This necessity result from the fact that in order to delete desired node. The predecessor of this node has to be found.
+
+To find the predecessor required that a search could be carried out by changing through node from the first node of the list such requirement doesn’t exist for circular list.

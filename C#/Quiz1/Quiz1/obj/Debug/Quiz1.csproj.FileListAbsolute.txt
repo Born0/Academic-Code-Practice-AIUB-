@@ -1,0 +1,10 @@
+F:\class\github\C#\Quiz1\Quiz1\bin\Debug\Quiz1.exe.config
+F:\class\github\C#\Quiz1\Quiz1\bin\Debug\Quiz1.exe
+F:\class\github\C#\Quiz1\Quiz1\bin\Debug\Quiz1.pdb
+F:\class\github\C#\Quiz1\Quiz1\bin\Debug\Bolwer.dll
+F:\class\github\C#\Quiz1\Quiz1\bin\Debug\Bolwer.pdb
+F:\class\github\C#\Quiz1\Quiz1\obj\Debug\Quiz1.csprojAssemblyReference.cache
+F:\class\github\C#\Quiz1\Quiz1\obj\Debug\Quiz1.csproj.CoreCompileInputs.cache
+F:\class\github\C#\Quiz1\Quiz1\obj\Debug\Quiz1.csproj.CopyComplete
+F:\class\github\C#\Quiz1\Quiz1\obj\Debug\Quiz1.exe
+F:\class\github\C#\Quiz1\Quiz1\obj\Debug\Quiz1.pdb

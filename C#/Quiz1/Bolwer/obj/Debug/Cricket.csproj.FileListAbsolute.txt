@@ -1,0 +1,6 @@
+F:\class\github\C#\Quiz1\Bolwer\bin\Debug\Bolwer.dll
+F:\class\github\C#\Quiz1\Bolwer\bin\Debug\Bolwer.pdb
+F:\class\github\C#\Quiz1\Bolwer\obj\Debug\Cricket.csprojAssemblyReference.cache
+F:\class\github\C#\Quiz1\Bolwer\obj\Debug\Cricket.csproj.CoreCompileInputs.cache
+F:\class\github\C#\Quiz1\Bolwer\obj\Debug\Bolwer.dll
+F:\class\github\C#\Quiz1\Bolwer\obj\Debug\Bolwer.pdb

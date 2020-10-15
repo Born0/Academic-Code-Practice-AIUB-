@@ -1,0 +1,6 @@
+F:\class\github\C#\Inheritance\Library1\bin\Debug\Library1.dll
+F:\class\github\C#\Inheritance\Library1\bin\Debug\Library1.pdb
+F:\class\github\C#\Inheritance\Library1\obj\Debug\Library1.csprojAssemblyReference.cache
+F:\class\github\C#\Inheritance\Library1\obj\Debug\Library1.csproj.CoreCompileInputs.cache
+F:\class\github\C#\Inheritance\Library1\obj\Debug\Library1.dll
+F:\class\github\C#\Inheritance\Library1\obj\Debug\Library1.pdb

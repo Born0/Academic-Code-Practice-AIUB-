@@ -1,0 +1,103 @@
+#include <iostream>
+
+static int count=0;
+
+class Node{
+public:
+  int data;
+  Node* prev;
+  Node* next;
+};
+
+Node* head=NULL;
+
+void creatNode(int key);
+void insertByPos(int pos,int key);
+void iAfter(Node* cNode,int key);
+void iBefore(Node* cNode,int key);
+void display();
+
+void creatNode(int key){
+  Node *cNode=new Node;
+  cNode=head;
+  Node *nNode=new Node;
+  nNode->data=key;
+  nNode->prev=NULL;
+  nNode->next=NULL;
+  if(cNode==NULL){
+    head=nNode;
+  }
+  else{
+    while(cNode->next!=NULL){
+      cNode=cNode->next;
+    }
+    cNode->next=nNode;
+    nNode->prev=cNode;
+  }
+  count++;
+}
+
+void insertByPos(int pos,int key){
+  Node *cNode=new Node;
+  cNode=head;
+  if(pos==1){
+    iBefore(cNode,key);
+  }
+  else{
+    for (size_t i=1;i<pos-1;i++){
+      cNode=cNode->next;
+    }
+    iAfter(cNode,key);
+  }
+}
+
+void iAfter(Node* cNode,int key){
+  Node *nNode=new Node;
+  nNode->data=key;
+  nNode->next=cNode->next;
+  nNode->prev=cNode;
+  cNode->next=nNode;
+  count++;
+}
+
+void iBefore(Node* cNode,int key){
+  Node *nNode=new Node;
+  nNode->data=key;
+  nNode->prev=cNode->prev;
+  nNode->next=cNode;
+  cNode->prev=nNode;
+  if(cNode==head){
+    head=nNode;
+  }
+  else{
+    nNode->prev->next=nNode;
+  }
+  count++;
+}
+
+void display(){
+  Node *cNode=new Node;
+  cNode=head;
+  std::cout<<"Data List :\t";
+  while(cNode!=NULL){
+    std::cout<<cNode->data<<'\t';
+    cNode=cNode->next;
+  }
+  std::cout<<"\nNode count : "<<count;
+}
+
+main()
+{
+  creatNode(22);
+  creatNode(33);
+	creatNode(55);
+  creatNode(66);
+
+  insertByPos(1,11);
+  insertByPos(4,44);
+	insertByPos(7,77);
+	insertByPos(8,88);
+	insertByPos(9,99);
+
+  display();
+}
