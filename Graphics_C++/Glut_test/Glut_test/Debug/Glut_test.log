@@ -1,0 +1,3 @@
+﻿  Source.cpp
+f:\class\github\graphics_c++\glut_test\glut_test\source.cpp(21): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Glut_test.vcxproj -> F:\class\github\Graphics_C++\Glut_test\Debug\Glut_test.exe

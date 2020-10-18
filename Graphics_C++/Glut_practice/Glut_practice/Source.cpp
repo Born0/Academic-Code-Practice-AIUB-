@@ -55,7 +55,7 @@ int main(int argc, char** argv) {
 	glutInitWindowSize(640, 480);   // Set the window's initial width & height
 	glutInitWindowPosition(50, 50); // Position the window's initial top-left corner
 	glutDisplayFunc(DisplayQuads); // Register display callback handler for window re-paint
-	glutReshapeFunc(Reshape);
+	//glutReshapeFunc(Reshape);
 	initGL();
 	glutMainLoop();           // Enter the event-processing loop
 	return 0;
