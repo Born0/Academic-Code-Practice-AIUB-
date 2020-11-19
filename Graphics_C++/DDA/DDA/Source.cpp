@@ -1,7 +1,8 @@
 #include <cstdio>
 #include<GL/gl.h>
 #include <GL/glut.h>
-#include<cmath>
+//#include<cmath>
+#include<math.h>
 #include<iostream>
 
 using namespace std;
