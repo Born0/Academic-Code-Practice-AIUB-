@@ -59,10 +59,11 @@ void display() {
 	glVertex2f(.1f, .75f);
 	glVertex2f(.0f, .75f);
 	glEnd();
-
-
-
 	glTranslatef(0.15, -.0, 0);
+
+
+
+
 
 	glBegin(GL_QUADS);//g2
 	glColor3f(0.0f, 0.0, 0.0);
