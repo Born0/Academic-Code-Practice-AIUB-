@@ -3,6 +3,13 @@
 #include <iostream>
 using namespace std;
 
+//////////////////////////
+// This program does not read your 'C' drive, there's lots of files so it takes too long.
+// If you want to add 'C' Drive then go to LINE:71 [string startingDir="D:\\";],change [D->C]
+// If you have more than 4 drives go to LINE:69 [int totalDir=4; ], change [4->numberOfTotalDriveYouHave]
+/////////////////////////
+// MD. SIRAJUDDIN BORNO  AIUB#18-36449-1
+////////////////////////
 int count=0;
 void GetFileListing(string directory, string type, bool recursively = true)
 {
@@ -27,9 +34,7 @@ void GetFileListing(string directory, string type, bool recursively = true)
   {
     if (!recursively)
     {
-      directory=directory-"\ ";
       cout << directory + string(FindFileData.cFileName) << endl;
-      directory=directory+"\ ";
       count++;
     }
 
@@ -61,12 +66,13 @@ void GetFileListing(string directory, string type, bool recursively = true)
 void ForFile(string fileName)
 {
   int i=0;
+  int totalDir=4;       // Total Directory on your desktop [here 4: D,E,F,G]
   char x='E';
-  string dir="D:\\";
-  while(i<3)
+  string startingDir="D:\\";
+  while(i<totalDir)
   {
-    GetFileListing(dir, fileName);
-    dir[0]=x++;
+    GetFileListing(startingDir, fileName);
+    startingDir[0]=x++;
     i++;
   }
 
@@ -78,13 +84,11 @@ void ForFile(string fileName)
 string input()
 {
   string fname,type,fullName;
-  cout<<endl<<"Enter file type:";
+  cout<<"Enter file type:";
   cin>>type;
-  cout<<endl;
-  cout<<"Enter File name:";
+  cout<<endl<<"Enter File name:";
   cin>>fname;
-
-  cout<<endl<<endl;
+  cout<<endl;
   type="*."+type;
   fullName=fname+type;
   return fullName;
