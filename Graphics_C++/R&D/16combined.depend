@@ -343,7 +343,7 @@
 	<windows.h>
 	<mmsystem.h>
 
-1608568252 source:f:\class\github\graphics_c++\r&d\main.cpp
+1608905772 source:f:\class\github\graphics_c++\r&d\main.cpp
 	<iostream>
 	<GL/gl.h>
 	<GL/glut.h>

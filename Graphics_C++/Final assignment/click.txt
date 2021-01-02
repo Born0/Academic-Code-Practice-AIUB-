@@ -1,0 +1,99 @@
+#include<cstdio>
+#include <GL/gl.h>
+#include <GL/glut.h>
+
+float X;
+float Y;
+float enemymove = 0.0;
+
+bool enemy=true;
+
+void triangle(double a1,double b1,double a2,double b2,double a3,double b3) // to draw triangle
+{
+    glBegin(GL_TRIANGLES);
+    glVertex2f(a1,b1);
+    glVertex2f(a2,b2);
+    glVertex2f(a3,b3);
+    glEnd();
+}
+
+void update(int value) {
+
+	glutPostRedisplay();
+	enemymove -=0.01;
+    printf("clicked at (%f)\n",enemymove );
+	glutTimerFunc(100, update, 0);
+}
+
+
+void handleMouse(int button, int state, int x, int y) {
+	if (button == GLUT_LEFT_BUTTON)
+	{
+		if (state == GLUT_DOWN)
+		{
+            X=(float(x)-250)/250;
+            Y=(float(y)-150)/150*(-1);
+
+            printf("clicked at (%f, %f)\n", X, Y);
+
+
+            if(X>-0.4 && X<-0.2)
+            {
+                if(enemymove>0)
+                {
+                    if(Y>(enemymove+.9) && Y<(enemymove+.7))
+                    {
+                        enemy=false;
+                    }
+                }
+                else
+                {
+                    if(Y>(enemymove+.7) && Y<(enemymove+.9))
+                    {
+                        enemy=false;
+                    }
+                }
+            }
+
+        }
+    }
+
+	glutPostRedisplay();
+}
+
+
+
+void display() {
+   glClear(GL_COLOR_BUFFER_BIT);
+   glLoadIdentity();
+    glColor3ub(255,0,0);
+    glPushMatrix();
+        glTranslatef(0.0f,enemymove, 0.0);
+        if(enemy==true)
+        {
+            triangle(-0.4, 0.9,-0.2, 0.9,-0.3, 0.8);
+        }
+    glPopMatrix();
+   glFlush();
+}
+void init()
+{
+   glClearColor(0.0, 0.0, 0.0, 1.0);
+}
+int main(int argc, char** argv) {
+   glutInit(&argc, argv);
+   glutInitWindowSize(500, 300);
+   glutInitWindowPosition(0, 0);
+   glutCreateWindow("click");
+   glutDisplayFunc(display);
+   init();
+
+
+
+   glutMouseFunc(handleMouse);
+
+   glutTimerFunc(100, update, 0);
+
+   glutMainLoop();
+   return 0;
+}
